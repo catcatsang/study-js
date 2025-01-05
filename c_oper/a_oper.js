@@ -5,8 +5,14 @@ let int4 = "15";
 
 let int6 = int1 !== int4;
 
+// let 변수선언의 객체값 int1 은 10의 값을 지정받았고, int3은 "10" 이라는 문자값이지만 정수값 10으로도 인식되므로
+// == 는 값만 비교하기때문에 true
 console.log(int1 == int3);
+
+// int1의 값은 10, int3 의 값은 "10"
+// === 은 타입까지 비교하므로 false
 console.log(int1 === int3);
+
 console.log(int6);
 
 let number1 = 10;
@@ -23,10 +29,12 @@ let condition = number1 > 5,
   condition3 = condition || condition2;
 
 // number1 이 5 보다 클때 또는 number2 가 10보다 작을때
-// && or 관계연산자에서는 둘중 하나라도 true 라면 true 이다
-// 그래서 true
+// && or 관계연산자에서는 둘중 하나라도 false 라면 false 이다
+// 그래서 false
 console.log(number1 > 5 && number2 < 10);
 
+// number1이 5보다 크다, true ,  number2 는 10보다 작다.
+//
 console.log(number1 > 5 || number2 < 10);
 
 console.log(5 && number2 < 10);
