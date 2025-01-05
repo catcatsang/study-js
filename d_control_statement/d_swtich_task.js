@@ -29,4 +29,4 @@ switch (input) {
         break;
     case four=1:
     default    
-}
+};
