@@ -13,9 +13,9 @@
 // };
 
 // 1. 마침표로 접근
-// console.log(typeof user);
-// console.log(user.name);
-// user.introduce();
+// console.log(typeof user);  object 뜸뜸
+// console.log(user.name);    "한동석"
+// user.introduce();          Hi~~
 
 // 2. 대괄호로 접근
 // const p = {

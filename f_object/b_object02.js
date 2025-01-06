@@ -16,25 +16,41 @@
 // 모든 프로퍼티를 조회한다.
 // console.log(lunch);
 
-const lunch = {};
+// const lunch = {};
 // const lunch = new Object();
 
-lunch.name = "김밥";
-lunch.price = 3000;
-// 주소값을 전달받으면,
+// lunch.name = "김밥";
+// lunch.price = 3000;
+// // 주소값을 전달받으면,
+// lunch.pay = (user) => {
+//   // 해당 주소는 중복이 없기 때문에,
+//   // 리턴 없이도 원본 객체의 프로퍼티에 접근하여 값을 수정할 수 있다.
+//   user.money -= lunch.price;
+// };
+
+// const user = {};
+
+// user.name = "홍길동";
+// user.money = 10000;
+
+// 주소를 전달했기 때문에 리턴 없이도 원본 값이 수정되었다.
+// lunch.pay(user);
+
+// pay 메소드에서 수정된 결과가 반영된다.
+// console.log(user.money);
+
+const lunch = {};
+
+lunch.name1 = "유부초밥";
+lunch.price = 6000;
 lunch.pay = (user) => {
-  // 해당 주소는 중복이 없기 때문에,
-  // 리턴 없이도 원본 객체의 프로퍼티에 접근하여 값을 수정할 수 있다.
   user.money -= lunch.price;
 };
 
 const user = {};
 
-user.name = "홍길동";
+user.name = "정재훈";
 user.money = 10000;
-
-// 주소를 전달했기 때문에 리턴 없이도 원본 값이 수정되었다.
 lunch.pay(user);
 
-// pay 메소드에서 수정된 결과가 반영된다.
-console.log(user.money);
+console.log(user);
