@@ -13,6 +13,9 @@ const ERROR_MESSAGE = "다시 시도해주세요.";
 let choice = 3;
 let result = null;
 
+// choice 가 1과 같은 값이라면 A_MESSAGE를 출력
+// choice 가 1과 같은 값이 아니라면 밑의 else if 로 넘어감
+// 모든 else if 가 false 이면 마지막 else 로 넘어감감
 if (choice == 1) {
   console.log(A_MESSAGE);
 } else if (choice == 2) {

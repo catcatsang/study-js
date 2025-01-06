@@ -71,6 +71,11 @@
 // console.log(result);
 
 // 1 ~ n까지의 합을 구해주는 함수
+
+// getTotal 이라는 함수에 end라는매개변수가 있다.
+// total 이라는 변수를 지역변수로 선언
+// for문을 사용해서 end 값 까지 의 합을 total 에 저장,
+// total 을 리턴함
 function getTotal(end) {
   let total = 0;
   for (let i = 0; i < end; i++) {
@@ -84,13 +89,13 @@ let total = getTotal(10);
 console.log(total);
 
 // 홀수를 짝수로, 짝수를 홀수로 바꿔주는 함수
-function change(number) {
-  return ++number;
-}
+// function change(number) {
+//   return ++number;
+// }
 
-let result = change(11);
-let resultMessage = result % 2 == 0 ? "짝수" : "홀수";
-console.log(`${resultMessage}로 변경되었습니다.`);
+// let result = change(11);
+// let resultMessage = result % 2 == 0 ? "짝수" : "홀수";
+// console.log(`${resultMessage}로 변경되었습니다.`);
 
 // if (result % 2 == 0) {
 //     console.log("짝수로 변경되었습니다.");
