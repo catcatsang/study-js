@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li class="car">페라리</li>
+      <li class="car">람보르기니</li>
+      <li class="car">벤츠츠</li>
+    </ul>
+  </body>
+  <script>
+    // 자동차 중 ferrari만 빨간색 글자로 설정하고
+    // 나머지 자동차는 글자 크기를 20xp 로 설정한다
+    HTMLCollection.prototype.forEach = Array.prototype.forEach;
+
+    const cars = document.getElementsByClassName("car"); //cars 에 car 데이터를 받아오고
+    cars.forEach((car) => {
+      // cars 반복문을 실행, car
+      cars[0].classList.add("ferari"); // cars[0] cars에 0번째 배열값에 classList.add로 클래스이름 ferari를 추가
+      const condition = car.classList[1]; // condition에 car.classlist[1] 다른 car 에는 1번 배열이 없음 그래서 ferari임
+      console.log(car.classList); // 이건 그냥 출력 해본거,,
+      car.style[condition ? "color" : "fontSize"] = condition ? "red" : "20px"; // car.style car에 스타일을 넣겠다.condition 기준으로 삼항을 쓰고있는데 반복문안에 있기때문에 첫번째만 condition 에 해당됨
+    });
+  </script>
+</html>

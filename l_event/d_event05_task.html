@@ -41,15 +41,24 @@
     // 전체 동의도 체크가 해제된다.
     // 전체 동의를 체크하지 않았더라도, 선택 동의를 모두 체크하면,
     // 전체 동의도 체크된다.
+    NodeList.prototype.filter = Array.prototype.filter;
 
-    const all = document.querySelectorAll("input[type=checkbox]");
+    const all = document.querySelector("input.all");
     const terms = document.querySelectorAll("input.term");
     console.log("in");
     console.log(terms);
     console.log(all);
 
     all.addEventListener("change", (e) => {
-      terms.forEach((term) => {});
+      terms.forEach((term) => {
+        term.checked = e.target.checked;
+      });
+    });
+
+    terms.forEach((term) => {
+      term.addEventListener("change", (e) => {
+        all.checked = terms.filter((term) => term.checked).length === 3;
+      });
     });
 
     // const term2
