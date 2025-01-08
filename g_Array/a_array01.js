@@ -118,3 +118,5 @@
 
 // 기존 값을 두 배 증가시키기
 let datas = new Array(3, 6, 2, 7, 8);
+
+const result = datas.map((data, i) => data * 2);

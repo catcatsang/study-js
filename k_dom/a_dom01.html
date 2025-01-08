@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>클래스 이름 선택택</title>
+    <style>
+      body {
+        font: size 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>클래스 이름 선택.</h1>
+    <ul>
+      <li class="odd item"></li>
+      <li class="even item"></li>
+      <li class="odd item"></li>
+      <li class="even item"></li>
+      <li class="odd item"></li>
+    </ul>
+  </body>
+  <script>
+    // const oddlist = getElementsByClassName("odd"); //odd 객체로 모아놓은 배열같은 객체 , 키값이 index 가 됨?..
+    //object.freeze(oddList); // 원본 수정금지지
+    // for (let i = 0; i < oddList.length; i++) {}
+
+    // HTMLCollection.prototype.forEach = Array.prototype.forEach; //
+    // const oddlist = document.getElementsByClassName("odd");
+    // const evenlist = document.getElementsByClassName("even");
+    // oddlist.forEach((odd) => {
+    //   odd.style.color = "red";
+    // });
+    // evenlist.forEach((even) => {
+    //   even.style.color = " green";
+    // });
+
+    console.log("들어옴");
+
+    HTMLCollection.prototype.forEach = Array.prototype.forEach; //HTMLCollection 안에 prototype
+
+    const litags = document.getElementsByClassName("item");
+
+    litags.forEach((li) => {
+      li.style.color = lit.classlist[0] === "odd" ? "Red" : "green";
+      li.style.color = li.classlist.contains("odd");
+    });
+  </script>
+</html>
