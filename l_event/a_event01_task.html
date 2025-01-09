@@ -40,24 +40,28 @@
       // 1. 아이디가 입력되지 않았을 때 적절한 메세지를 id-message에 빨간색으로 작성
       // 2. 아이디가 입력되었을 때 적절한 메세지를 id-message에 녹색으로 작성
       if (idInput.value) {
-        idMessage.innerText = "멋진 아이디네요!"; // idmessage
-        idMessage.classList.add("green");
+        // idInput.value 가 true 값일때때
+        idMessage.innerText = "멋진 아이디네요!"; // idmessage 텍스느 멋진 아이디네요 를 값으로 지정정
+        idMessage.classList.add("green"); // idmessage 에 클래스 "green" 을 추가
         // return;
       } else {
-        idMessage.innerText = "아이디를 입력해주세요.";
-        idMessage.classList.remove("green");
+        // idInput.value 가 false 값일때때
+        idMessage.innerText = "아이디를 입력해주세요."; //   idmessage에 텍스트 "멋진 아이디네요" 를 값으로 지정
+        idMessage.classList.remove("green"); // idmessage 에 green 클래스를 삭제제
       }
 
       // 비밀번호를 검사
       // 1. 비밀번호가 입력되지 않았을 때 적절한 메세지를 password-message에 빨간색으로 작성
       // 2. 비밀번호가 입력되었을 때 적절한 메세지를 password-message에 녹색으로 작성
       if (passwordInput.value) {
-        passwordMessage.innerText = "적합한 비밀번호입니다.";
-        passwordMessage.classList.add("green");
+        // passwordInput.value 값이 true 일때
+        passwordMessage.innerText = "적합한 비밀번호입니다."; // passwordMessage 에 "적합한 비밀번호입니다" 를 추가함함
+        passwordMessage.classList.add("green"); // passwordMessage 클래스명에 "green" 을추가함
         // return;
       } else {
-        passwordMessage.innerText = "비밀번호를 입력해주세요.";
-        passwordMessage.classList.remove("green");
+        // passwordInput.value 가 false 값일때 ( 아무것도 안쳐졋을때때)
+        passwordMessage.innerText = "비밀번호를 입력해주세요."; // "비밀번호를 입력해주세요" 을 추가함함
+        passwordMessage.classList.remove("green"); // class에 "green" 을 삭제함함
       }
     });
   </script>

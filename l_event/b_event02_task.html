@@ -58,12 +58,13 @@
       input.addEventListener("focus", (e) => {
         // 아래의 상황에서는 input과 e.target의 차이가 없다.
         // 즉, 이벤트 발생시킨 객체가 input이다.
-        e.target.style.border = "1px solid green";
+        e.target.style.border = "1px solid green"; // input 마다 border 1px solid green 을 추가함함
         // input.style.border = "1px solid green";
       });
 
       input.addEventListener("blur", () => {
-        input.style.border = "1px solid red";
+        // input 에 이벤트 리스너 적용 마우스 올렷다가땔때
+        input.style.border = "1px solid red"; // blur 이벤트 효과는 border = 1px solid red
       });
     });
   </script>

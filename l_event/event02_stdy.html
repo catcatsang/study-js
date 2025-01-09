@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>이벤트 02</title>
+    <title>이벤트_02_stdy</title>
     <style>
       input {
         outline: none;
@@ -18,29 +18,15 @@
     </form>
   </body>
   <script>
-    const birth = info.birth; // form의 name 은 info
-    const phone = info.phone; //
+    const birth = info.birth; // form의 name은 info
+    const phone = info.phone; // same
 
     const birthRegex =
       /^(19[0-9][0-9]|20\d{2})\.?(0[1-9]|1[1-2])\.?(0[1-9]|[1-2][0-9]|3[0-1])$/;
     const phoneRegex = /^01([0|1|6|7|8|9])\-?([0-9]{3,4})\-?([0-9]{4})$/;
 
-    birth.addEventListener("blur", () => {
-      if (birthRegex.test(birth.value)) {
-        birth.style.border = "1px solid blue"; //
-        return;
-      }
-      birth.style.border = "1px solid red";
-      birth.focus();
-    });
-
-    phone.addEventListener("blur", () => {
-      if (phoneRegex.test(phone.value)) {
-        phone.style.border = "1px solid blue";
-        return;
-      }
-      phone.style.border = "1px solid red";
-      phone.focus();
-    });
+    birth.addEventListener("blur", () =>{
+        if()
+    })
   </script>
 </html>

@@ -30,15 +30,15 @@
 
 // 전달받은 댓글들 중, postId가 3인 댓글 내용 출력
 
-const userservice = () => {
-  const getlist = async () => {
-    const response = await fetch("");
-    const posts = await response.json();
-    
-    const posts = 
-    
-  };
-};
+// const userservice = () => {
+//   const getlist = async () => {
+//     const response = await fetch("");
+//     const posts = await response.json();
+
+//     const posts =
+
+//   };
+// };
 
 const userserivce = () => {
   const getlist = async () => {
