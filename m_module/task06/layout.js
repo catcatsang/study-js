@@ -7,12 +7,13 @@ const userlayout = (() => {
       text += `<tr>
       <td>${name}</td>
       <td>${email}</td>
-      <td ${phone.style.colo}>${phone}</td>
+      <td>${phone}</td>
       <td>${website}</td>
 </tr>`;
     });
     wrap.innerHTML = text;
   };
+  return { showusers: showusers };
 })();
 // <!-- 사용자 정보를 10개 불러온다. -->
 // <!-- table 태그를 사용한다. -->
