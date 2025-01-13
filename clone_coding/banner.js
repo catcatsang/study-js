@@ -15,3 +15,9 @@ lastBanner.innerHTML = `<img
 Banner.appendChild(firstBanner);
 Banner.prepend(lastBanner);
 Banner.style.transform = `translate(-500px)`;
+
+const autoSlide = () => {
+  count++;
+  Banner.style.transform = `translate(-${500 * count}px)`;
+  Banner.style.transition = `transform 0.5s`;
+};
