@@ -96,3 +96,5 @@ buttons.forEach((button, i) => {
     }, 1000);
   });
 });
+
+const filmMain = document.querySelector("film-main");
