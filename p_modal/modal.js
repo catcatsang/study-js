@@ -1,3 +1,9 @@
+
+
+const button = document.querySelector(".modal-btn");
+
+
+
 let modalCheck;
 
 const showWarnModal = (modalMessage) => {
@@ -19,3 +25,8 @@ document.querySelector("div.modal").addEventListener("click", (e) => {
         }, 450);
     }
 });
+
+button.addEventListener("click", () => {
+    showWarnModal("This is a warning message!");
+});
+
